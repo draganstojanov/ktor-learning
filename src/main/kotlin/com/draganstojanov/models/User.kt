@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class User(
-    val id: String,
+    val id: Long,
     val firstName: String,
     val lastName: String,
     val nickName: String = "",
@@ -13,3 +13,13 @@ data class User(
 )
 
 val userStorage = mutableListOf<User>()
+
+
+//{
+//    "id": "100",
+//    "firstName": "Jane",
+//    "lastName": "Smith",
+//    "email": "jane.smith@company.com"
+//    "nickName" "Jane1",
+//    "status":"100"
+//}
